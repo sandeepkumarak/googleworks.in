@@ -1,0 +1,286 @@
+@charset "ISO-8859-1";
+@-ms-viewport{
+  width: device-width;
+}
+*{
+	
+}
+body{
+	font-family: 'Poppins', sans-serif;
+	font-size: 10px;
+	background-color:#f0f0f0;
+	overflow-x: hidden;
+	margin:0;
+	
+}
+/*login model card*/
+.logodp img{
+                display: block;
+                margin: 0 auto;
+               
+            }
+        /* Style inputs, element */
+       .my-login-card input[type=text],[type=password]{
+          display: flex;
+          width: 70%;
+          padding: 12px;
+          border: 1px solid white;
+          border-radius: 4px;
+          justify-content: center;
+          margin: 0 auto;
+          box-sizing: border-box;
+          resize: vertical;
+        }
+        
+        .my-login-card input[type=text],[type=password]{
+            box-shadow: inset 2px 2px 5px rgba(27,108,183,.1),
+                              2px 2px 10px rgba(27,108,183,.2);
+        }
+
+        /* Style the submit button */
+       .my-login-card input[type=submit] {
+          display: flex;
+          background-color: #1b6cb7;
+          color: white;
+          padding: 12px 20px;
+          border: none;
+          border-radius: 4px;
+          width: 150Px;
+          cursor: pointer;
+          justify-content: center;
+          /*float: right;*/
+          margin: 0 auto;
+          box-shadow: inset 0px 0px 5px rgba(255,255,255,.5);
+        }
+       .my-login-card input[type=submit]:active{
+         box-shadow: inset 0px 0px 5px rgba(0,0,0,.3);   
+        }
+
+        /*Style the container */
+     .logincontainer {
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 5px;
+            background-color: #f2f2f2;
+            -webkit-backdrop-filter: blur(15px);
+            backdrop-filter: blur(10px);
+            box-shadow: 0px 0px 50px rgba(10,75,100,.7);
+            background-color: rgba(255, 255, 255, 0.5);  
+            padding: 20px;
+            color: #222;
+            width: 35%;
+            max-height: 100%;
+            padding: 1rem 2rem;
+            resize: both;
+            margin: 0 auto;
+        }
+
+        .my-login-card{
+            /*box-sizing: content-box;*/
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 5px;
+            min-width: 320px;
+            /*background-color: #f2f2f2;*/
+            -webkit-backdrop-filter: blur(15px);
+            backdrop-filter: blur(10px);
+            box-shadow: 0px 0px 50px rgba(10,75,100,.7);
+            background-color: rgba(255, 255, 255, 0.5);  
+            padding: 20px;
+            color: #222;
+        }
+        /* Floating column for labels: 25% width */
+       
+        
+        
+        /* Clear floats after the columns */
+        .row:after {
+          content: "";
+          display: table;
+          clear: both;
+          margin-top: 5px;
+        }
+
+         /*Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other*/ 
+        @media screen and (max-width: 600px) {
+            input[type=submit] {
+            width: 70%;
+            margin-top: 0;
+          }
+          .logincontainer {
+            width: 70%;
+            margin-top: 0;
+          }
+        }
+/*end login card*/
+
+/* header section */
+.color{
+	background-color:#efefef;
+}
+
+nav ul li a{
+	color:#a2a2a2;
+}
+.navbar-img{
+	height:50px;
+}
+.btn3{
+	height:50%;
+		
+}
+.header ul li{
+	padding-left:5px;
+	padding-right:10px;
+}
+
+.bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+.h-btn1{
+	background-color:#ffb56a;
+}
+.h-btn1:hover{
+	padding:5px 10px 10px 5px;
+	background-color:#ff9e3e;
+	text-decoration:none;
+}
+.h-btn2{
+	background-color:#0000ff;
+	padding:5px 10px 10px 5px;
+}
+.h-btn2:hover{
+	background-color:#0000d5;
+	padding:5px 10px 10px 5px;
+	text-decoration:none;
+}
+
+/* header end */
+
+.info{
+	height:550px;
+   	width: 100%;
+   	position:relative;
+}
+    
+.bg-img{
+	width:100%;
+	height:100%;
+	position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.bg-text{
+  background-color: rgba(230,230,230, 0.85); /* Black w/opacity/see-through */
+  position:absolute;
+  top: 0;
+  left: 0;
+  z-index: 9;
+  width: 100%;
+  height:100%;
+  text-align: center;
+  color:black;
+}
+.bg-text img{
+	margin-top:100px;
+}
+.bg-image{
+	display:block;
+	position:relative;
+	width:100%;
+	height:550px;
+	}
+.bg-text h1{
+	padding-top:100px;
+}
+.bg-text h2{
+	margin-top:50px;
+}
+.bg-text p{
+	margin-top:30px;
+}
+
+.aboutus{
+	padding-top:10px;
+	text-align:center;
+}
+.card-deck{
+	
+	margin-left:auto;
+	margin-right:auto;
+	
+}
+	
+.card-columns {
+  @include media-breakpoint-only(lg) {
+    column-count: 3;
+  }
+  @include media-breakpoint-only(sm) {
+    column-count: 1;
+  }
+}
+
+/* showcase*/
+.sticky{
+ 
+  }
+
+.lapi{
+	width:100%;
+	height:100%;
+}
+
+
+
+/*footer*/
+.footer{
+	background-color:#dadce0;
+	color:black;
+	text-align:center;
+	margin-top:10px;
+}
+
+.footer{text-align:left;}
+.footer-heading h3{
+	font-size:16px;
+	padding-left:10px;
+}
+.footer-main ul li{
+	padding:10px;
+	display:inline-block;
+}
+.footer-menu{
+	text-align:left;
+}
+.footer-menu ul li{
+	display:block;
+	line-height:2;
+}
+.footer-menu ul li a{
+	color:#5f6368;
+}
+
+
+
+/* text animation*/
+.ml12 {
+  font-weight: 200;
+  font-size: 2.8em;
+  
+}
+
+.ml12 .letter {
+  display: inline-block;
+  line-height: 1em;
+}
+
